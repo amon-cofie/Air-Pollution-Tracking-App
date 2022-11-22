@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import finalPropsSelectorFactory from 'react-redux/es/connect/selectorFactory';
+
 // import axios from 'axios';
 
 const initialState = {

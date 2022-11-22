@@ -10,9 +10,12 @@ import { displayInput, removeInput } from './redux/cities';
 import { Routes, Route } from 'react-router';
 import DataPage from './components/DataPage';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 const App = () => {
+  const navigate = useNavigate();
   const [inputData, setInputData] = useState('');
+  const [cityCoordinate, setCityCoordinate] = useState({});
   const inputField = useSelector((state) => state.cities.displayInput);
   const cities = useSelector((state) => state.cities.cities);
   // const pollutionData = useSelector(
@@ -36,15 +39,20 @@ const App = () => {
     // dispatch(fetchPollutionData())
   }, []);
 
+  const handleClick = (obj) => {
+    // const latitude = obj.lat;
+    // const longitude = obj.lon;
+    // const cityCoordinate = { latitude, longitude };
+    setCityCoordinate(obj);
+  };
+
   return (
     <>
       <header>
-        <nav>
-          This is experimental
-          <Link to="/">Home</Link>
-          <Link to="/data">Pollution Data</Link>
-        </nav>
-        <i className="fa-solid fa-chevron-left"></i>
+        <i
+          className="fa-solid fa-chevron-left"
+          onClick={() => navigate(`/`)}
+        ></i>
 
         {/* <span>{someData}</span> */}
         {/* <span>{pageTitle}</span> */}
@@ -86,7 +94,13 @@ const App = () => {
                 {cities.length === 0 ? (
                   <h2>No city found</h2>
                 ) : (
-                  cities.map((city) => <City key={nanoid()} city={city} />)
+                  cities.map((city) => (
+                    <City
+                      key={nanoid()}
+                      city={city}
+                      handleClick={handleClick}
+                    />
+                  ))
                 )}
               </section>
             }
@@ -95,7 +109,7 @@ const App = () => {
             path="/data"
             element={
               <section>
-                <DataPage />
+                <DataPage cityCoordinate={cityCoordinate} />
               </section>
             }
           />
