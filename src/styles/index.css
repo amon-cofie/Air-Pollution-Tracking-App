@@ -1,0 +1,19 @@
+:root {
+  --united-nations-blue: #5889e5ff;
+  --gainsboro: #d7dedcff;
+  --coyote-brown: #7a542eff;
+  --bottle-green: #0b6e4fff;
+  --royal-blue-dark: #001c55ff;
+
+  --spanish-blue: #0571b0ff;
+  --dark-sky-blue: #91c4dfff;
+  --green-yellow-crayola: #ecec9dff;
+  --light-salmon: #f4a380ff;
+  --maximum-red: #cd3121ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
