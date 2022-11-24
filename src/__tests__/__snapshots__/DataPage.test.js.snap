@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`City component renders correctly 1`] = `
+<div
+  className="mainDataContainer"
+>
+  <div
+    className="prelimData"
+  >
+    <div
+      className="prelimCityData"
+    >
+      <div
+        className="cityAndCountry"
+      >
+        <p
+          className="cityName"
+        />
+        <p
+          className="cityCountry"
+        >
+           
+          <span />
+        </p>
+      </div>
+      <p
+        className="cityState"
+      />
+    </div>
+    <div
+      className="cityAqiData"
+    >
+      AQI:
+       
+      1
+    </div>
+  </div>
+  <div
+    className="dataTableContainer"
+  >
+    <table
+      className="dataTable"
+    >
+      <thead>
+        <tr>
+          <th>
+            Pollutant
+          </th>
+          <th>
+            Concentration
+          </th>
+          <th>
+            Score
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            CO
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            NH
+            <sub>
+              3
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            NO
+          </td>
+          <td />
+          <td>
+            Rare pollutant
+          </td>
+        </tr>
+        <tr>
+          <td>
+            NO
+            <sub>
+              2
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            O
+            <sub>
+              3
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            PM
+            <sub>
+              2.5
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            PM
+            <sub>
+              10
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            SO
+            <sub>
+              2
+            </sub>
+          </td>
+          <td />
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="coverFoot"
+  />
+</div>
+`;
