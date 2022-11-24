@@ -10,11 +10,11 @@ const initialState = {
   displayMagnify: true,
 };
 
-const API_KEY = `6c7f1cb9c3e9af10bebb3ebf463ba368`;
+const API_KEY = '6c7f1cb9c3e9af10bebb3ebf463ba368';
 // const CITIES_URL = `http://api.openweathermap.org/geo/1.0/direct?q=london&limit=5&appid=${API_KEY}`;
 
 export const fetchCities = createAsyncThunk(
-  `GET_CONTINENTS`,
+  'GET_CONTINENTS',
   async (payload) => {
     const response = await axios.get(
       `http://api.openweathermap.org/geo/1.0/direct?q=${payload}&limit=5&appid=${API_KEY}`,
@@ -59,7 +59,8 @@ const citiesSlice = createSlice({
   },
 });
 
-export const { displayInput, removeInput, displayMagnify, removeMagnify } =
-  citiesSlice.actions;
+export const {
+  displayInput, removeInput, displayMagnify, removeMagnify,
+} = citiesSlice.actions;
 
 export default citiesSlice.reducer;

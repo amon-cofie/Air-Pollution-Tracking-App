@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_KEY = `6c7f1cb9c3e9af10bebb3ebf463ba368`;
+const API_KEY = '6c7f1cb9c3e9af10bebb3ebf463ba368';
 
 const initialState = {
   pollution: {},

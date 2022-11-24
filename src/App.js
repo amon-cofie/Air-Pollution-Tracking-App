@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import City from './components/City';
 import { nanoid } from '@reduxjs/toolkit';
+import { Routes, Route, useNavigate } from 'react-router';
+import City from './components/City';
 import {
   displayInput,
   removeInput,
@@ -9,7 +10,6 @@ import {
   fetchCities,
 } from './redux/cities';
 import { fetchPollutionData } from './redux/pollutionData';
-import { Routes, Route, useNavigate } from 'react-router';
 import DataPage from './components/DataPage';
 import style from './styles/App.module.css';
 import { fetchExtraData } from './redux/extraData';
@@ -42,13 +42,13 @@ const App = () => {
           className="fa-solid fa-chevron-left"
           onClick={() => {
             dispatch(displayMagnify());
-            navigate(`/`);
+            navigate('/');
           }}
-        ></i>
+        />
 
         {/* <span>{someData}</span> */}
         {/* <span>{pageTitle}</span> */}
-        <i className="fas fa-microphone"></i>
+        <i className="fas fa-microphone" />
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -75,15 +75,15 @@ const App = () => {
             onClick={() => {
               dispatch(displayInput());
             }}
-          ></i>
+          />
         ) : null}
-        <i className="fas fa-cog"></i>
+        <i className="fas fa-cog" />
       </header>
       <main>
         <Routes>
           <Route
             path="/"
-            element={
+            element={(
               <section className={style.cityContainer}>
                 <div className={style.cityFlexContainer}>
                   {cities.length === 0 ? (
@@ -99,11 +99,11 @@ const App = () => {
                   )}
                 </div>
               </section>
-            }
+            )}
           />
           <Route
             path="/data"
-            element={
+            element={(
               <section>
                 {fetchedData.isLoading ? (
                   <h2 className={style.loading}>Loading</h2>
@@ -114,7 +114,7 @@ const App = () => {
                   />
                 )}
               </section>
-            }
+            )}
           />
         </Routes>
       </main>

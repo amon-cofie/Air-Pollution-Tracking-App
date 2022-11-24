@@ -1,6 +1,6 @@
 import React from 'react';
-import style from '../styles/DataPage.module.css';
 import { useSelector } from 'react-redux';
+import style from '../styles/DataPage.module.css';
 import {
   scoreCO,
   scoreNH3,
@@ -33,14 +33,17 @@ const DataPage = ({ cityCoordinate, pollutionData }) => {
           <div className={style.cityAndCountry}>
             <p className={style.cityName}>{cityCoordinate.name}</p>
             <p className={style.cityCountry}>
-              {cityCoordinate.country}{' '}
+              {cityCoordinate.country}
+              {' '}
               <span>{fetchFlag(cityCoordinate.country)}</span>
             </p>
           </div>
           <p className={style.cityState}>{cityCoordinate.state}</p>
         </div>
         <div className={style.cityAqiData}>
-          AQI: {pollutionData.pollution.list[0].main.aqi}
+          AQI:
+          {' '}
+          {pollutionData.pollution.list[0].main.aqi}
         </div>
       </div>
       <div className={style.dataTableContainer}>
@@ -60,7 +63,8 @@ const DataPage = ({ cityCoordinate, pollutionData }) => {
             </tr>
             <tr>
               <td>
-                NH<sub>3</sub>
+                NH
+                <sub>3</sub>
               </td>
               <td>{pollutes.nh3}</td>
               <td>{scoreNH3(pollutes.nh3)}</td>
@@ -68,39 +72,44 @@ const DataPage = ({ cityCoordinate, pollutionData }) => {
             <tr>
               <td>NO</td>
               <td>{pollutes.no}</td>
-              <td>{'Rare pollutant'}</td>
+              <td>Rare pollutant</td>
             </tr>
             <tr>
               <td>
-                NO<sub>2</sub>
+                NO
+                <sub>2</sub>
               </td>
               <td>{pollutes.no2}</td>
               <td>{scoreNO2(pollutes.no2)}</td>
             </tr>
             <tr>
               <td>
-                O<sub>3</sub>
+                O
+                <sub>3</sub>
               </td>
               <td>{pollutes.o3}</td>
               <td>{scoreO3(pollutes.o3)}</td>
             </tr>
             <tr>
               <td>
-                PM<sub>2.5</sub>
+                PM
+                <sub>2.5</sub>
               </td>
               <td>{pollutes.pm2_5}</td>
               <td>{scorePM25(pollutes.pm2_5)}</td>
             </tr>
             <tr>
               <td>
-                PM<sub>10</sub>
+                PM
+                <sub>10</sub>
               </td>
               <td>{pollutes.pm10}</td>
               <td>{scorePM10(pollutes.pm10)}</td>
             </tr>
             <tr>
               <td>
-                SO<sub>2</sub>
+                SO
+                <sub>2</sub>
               </td>
               <td>{pollutes.so2}</td>
               <td>{scoreSO2(pollutes.so2)}</td>
@@ -108,7 +117,7 @@ const DataPage = ({ cityCoordinate, pollutionData }) => {
           </tbody>
         </table>
       </div>
-      <div className={style.coverFoot}></div>
+      <div className={style.coverFoot} />
     </div>
   );
 };
