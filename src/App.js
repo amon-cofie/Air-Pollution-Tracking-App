@@ -12,6 +12,7 @@ import { fetchPollutionData } from './redux/pollutionData';
 import { Routes, Route, useNavigate } from 'react-router';
 import DataPage from './components/DataPage';
 import style from './styles/App.module.css';
+import { fetchExtraData } from './redux/extraData';
 
 const App = () => {
   const allowSearch = useSelector((state) => state.cities.displayMagnify);
@@ -26,6 +27,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchCities('London'));
+    dispatch(fetchExtraData());
   }, []);
 
   const handleClick = (obj) => {
@@ -34,7 +36,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div>
       <header className={style.header}>
         <i
           className="fa-solid fa-chevron-left"
@@ -108,7 +110,7 @@ const App = () => {
                 ) : (
                   <DataPage
                     cityCoordinate={cityCoordinate}
-                    pollutionData={fetchedData.pollution}
+                    pollutionData={fetchedData}
                   />
                 )}
               </section>
@@ -116,7 +118,7 @@ const App = () => {
           />
         </Routes>
       </main>
-    </>
+    </div>
   );
 };
 
