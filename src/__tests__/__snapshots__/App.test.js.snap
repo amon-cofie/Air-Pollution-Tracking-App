@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <i
+      className="fa-solid fa-chevron-left"
+      onClick={[Function]}
+    />
+    <i
+      className="fas fa-microphone"
+    />
+    <form
+      onSubmit={[Function]}
+    />
+    <i
+      className="fa-solid fa-magnifying-glass"
+      onClick={[Function]}
+    />
+    <i
+      className="fas fa-cog"
+    />
+  </header>
+  <main>
+    <section
+      className="cityContainer"
+    >
+      <div
+        className="cityFlexContainer"
+      >
+        <h2
+          className="loading"
+        >
+          Loading
+        </h2>
+      </div>
+    </section>
+  </main>
+</div>
+`;
