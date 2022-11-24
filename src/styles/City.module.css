@@ -1,0 +1,5 @@
+.city {
+  width: 48%;
+  border: 1px solid red;
+  /* flex-wrap: wrap; */
+}
