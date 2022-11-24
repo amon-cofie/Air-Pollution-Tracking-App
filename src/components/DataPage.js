@@ -13,7 +13,6 @@ import {
 
 const DataPage = ({ cityCoordinate, pollutionData }) => {
   const pollutes = pollutionData.pollution.list[0].components;
-  console.log(pollutes);
   const extras = useSelector((state) => state.extraData.allCountries);
 
   const fetchFlag = (str) => {
