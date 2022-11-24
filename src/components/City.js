@@ -1,31 +1,23 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchPollutionData } from '../redux/pollutionData';
 import { useNavigate } from 'react-router';
+import { removeMagnify } from '../redux/cities';
+import style from '../styles/City.module.css';
 
 const City = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const { city, handleClick } = props;
-  const stateName = city.state ? city.state : '';
-
-  // handleClick(city);
-
-  useEffect(() => {
-    dispatch(fetchPollutionData());
-  }, []);
-
-  // console.log(city);
-
-  // const AQI = pollutionData.list[0].main.aqi;
+  const stateName = city.state ? city.state : null;
 
   return (
     <div
+      className={style.city}
       onClick={() => {
         handleClick(city);
         navigate(`/data`);
+        dispatch(removeMagnify());
       }}
     >
       <p>{city.name}</p>

@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  height: 2rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.inputField {
+  border: none;
+  text-align: center;
+  height: 100%;
+  width: 15rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.cityContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cityFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

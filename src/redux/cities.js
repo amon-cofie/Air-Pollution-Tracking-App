@@ -7,6 +7,7 @@ const initialState = {
   cities: [],
   isLoading: true,
   displayInput: false,
+  displayMagnify: true,
 };
 
 const API_KEY = `6c7f1cb9c3e9af10bebb3ebf463ba368`;
@@ -34,6 +35,14 @@ const citiesSlice = createSlice({
       ...state,
       displayInput: false,
     }),
+    displayMagnify: (state) => ({
+      ...state,
+      displayMagnify: true,
+    }),
+    removeMagnify: (state) => ({
+      ...state,
+      displayMagnify: false,
+    }),
   },
   extraReducers: {
     [fetchCities.pending]: (state) => {
@@ -50,6 +59,7 @@ const citiesSlice = createSlice({
   },
 });
 
-export const { displayInput, removeInput } = citiesSlice.actions;
+export const { displayInput, removeInput, displayMagnify, removeMagnify } =
+  citiesSlice.actions;
 
 export default citiesSlice.reducer;
