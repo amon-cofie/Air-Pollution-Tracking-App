@@ -27,13 +27,15 @@ const City = (props) => {
       className={style.city}
       onClick={() => {
         handleClick(city);
-        navigate(`/data`);
+        navigate('/data');
         dispatch(removeMagnify());
       }}
     >
       <p className={style.cityName}>{city.name}</p>
       <p className={style.countryAlpha2}>
-        {city.country} <span>{fetchFlag(city.country)}</span>
+        {city.country}
+        {' '}
+        <span>{fetchFlag(city.country)}</span>
       </p>
       <p className={style.stateName}>{stateName}</p>
     </div>

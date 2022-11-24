@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 :root {
@@ -9,13 +8,11 @@
   --coyote-brown: #7a542eff;
   --bottle-green: #0b6e4fff;
   --royal-blue-dark: #001c55ff;
-
   --spanish-blue: #0571b0ff;
   --dark-sky-blue: #91c4dfff;
   --green-yellow-crayola: #ecec9dff;
   --light-salmon: #f4a380ff;
   --maximum-red: #cd3121ff;
-
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Bree Serif', serif;
   --detail-font: cursive;
@@ -31,7 +28,8 @@
 main {
   background-color: var(--united-nations-blue);
   opacity: 0.8;
-  background-image: repeating-radial-gradient(
+  background-image:
+    repeating-radial-gradient(
       circle at 0 0,
       transparent 0,
       #e5e5f7 10px
