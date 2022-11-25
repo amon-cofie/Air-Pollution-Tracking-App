@@ -16,7 +16,7 @@
 ![preview](./src/resources/images/preview.gif)
 
 - [Live Demo Link](https://airpollutiontracker.netlify.app/)
-- [Loom Presentation Video Link](https://www.loom.com/share/6bb9836479b147799efb9e2f413828f4)
+- [Loom Presentation Video Link](https://www.loom.com/share/f5f27b4de32f4b9aa04a49d8cce539b1)
 
 ## Getting Started
 
