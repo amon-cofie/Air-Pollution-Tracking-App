@@ -11,13 +11,12 @@ const initialState = {
 };
 
 const API_KEY = '6c7f1cb9c3e9af10bebb3ebf463ba368';
-// const CITIES_URL = `http://api.openweathermap.org/geo/1.0/direct?q=london&limit=5&appid=${API_KEY}`;
 
 export const fetchCities = createAsyncThunk(
   'GET_CONTINENTS',
   async (payload) => {
     const response = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${payload}&limit=5&appid=${API_KEY}`,
+      `https://api.openweathermap.org/geo/1.0/direct?q=${payload}&limit=5&appid=${API_KEY}`,
     );
     return response.data;
   },
