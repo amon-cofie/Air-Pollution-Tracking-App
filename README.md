@@ -10,7 +10,7 @@
 - Redux
 - CSS
 
-## Live Demo (if available)
+## Live Demo
 
 ![Homepage](./src/resources/images/Homepage.png) ![Details](./src/resources/images/Details.png)
 ![preview](./src/resources/images/preview.gif)
