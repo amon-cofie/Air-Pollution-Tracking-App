@@ -2,7 +2,7 @@
 
 # Air Pollution Tracking App
 
-> This is a simple single page application of an app that tracks current air pollution data in any city in the world. It gives hourly average data on levels of concentration of various pollutes including Carbon Mono-Oxide, Ozone, PM25, PM10 among others. It is a good place to check the quality of the air in your local city or any city you would like to visit before you visit.
+> This is a simple single page application that tracks current air pollution data in any city in the world. It gives hourly average data on levels of concentration of various pollutes including Carbon Mono-Oxide, Ozone, PM25, PM10 among others. It is a good place to check the quality of the air in your local city or any city you would like to visit before you visit.
 
 ## Built With
 
