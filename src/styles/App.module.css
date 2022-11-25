@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--royal-blue-dark);
+}
+
+form {
+  height: 100%;
+}
+
+.inputField {
+  border: none;
+  text-align: center;
+  height: 100%;
+  width: 15rem;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.cityContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cityFlexContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}

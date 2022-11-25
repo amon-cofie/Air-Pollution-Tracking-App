@@ -1,0 +1,28 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 50%;
+  height: 33.3333%;
+  box-shadow: 0.3rem 0.3rem 3rem 0.1rem var(--royal-blue-dark);
+  font-size: 1.5rem;
+  background-color: rgba(88, 137, 229, 0.842);
+  overflow-y: hidden;
+}
+
+.cityName {
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.countryAlpha2 {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+.stateName {
+  font-family: var(--detail-font);
+  margin-top: 10%;
+  text-align: end;
+}
